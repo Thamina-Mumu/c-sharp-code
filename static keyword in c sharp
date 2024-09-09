@@ -1,0 +1,74 @@
+// static keyword using in field 
+
+using System;
+namespace usingstatickey{
+    class Databook{
+
+        //static variable
+         public static int sheetnumber = 1;
+         public static string sheetname = "employlist";
+        
+    }
+
+    class Book{
+
+        static void Main(string[]args){
+            //accessing the static variable from DataBook class
+            Console.WriteLine(" first sheet name is : " + Databook.sheetname);
+        }
+    }
+}
+
+
+
+============================================================================================================
+//differents between static variable and normal variable
+using System;
+
+namespace Theory{
+    class Science {
+        public string physics = "Nuton eqation";
+        static public string Chemistry = "atom";
+
+        public int number = 100;
+    }
+
+    class Technology{
+        static void Main(string[]args){
+            Science obj1 = new Science();
+
+            Console.WriteLine("one topic is : " + obj1.physics );
+            Console.WriteLine("The number is : "+ obj1.number);
+
+            Console.WriteLine("another topic is : " + Science.Chemistry);
+
+        }
+    }
+}
+
+
+======================================================================================================
+
+//differents between static variable and normal variable (example 2 )
+
+using System;
+namespace Staticandnormalvariable{
+    class Employee{
+        public static string name ="Aziz";
+        public int number = 10;
+    }
+    class Organigation{
+        static void Main(string[]args){
+            //create object for Employee
+            Employee obj1 = new Employee();
+        Console.WriteLine("the number of employee is : " +obj1.number );
+        Console.WriteLine("The name is : " + Employee.name );
+
+        //create object2 for Employee
+            Employee obj2 = new Employee();
+        Console.WriteLine("the number of employee is : " +obj2.number );
+        Console.WriteLine("The name is : " + Employee.name );
+
+        }
+    }
+}
