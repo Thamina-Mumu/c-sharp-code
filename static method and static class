@@ -38,8 +38,8 @@ namespace StaticMethod{
 using System;
 namespace staticclass{
     static class Project{
-       public static int number = 10;
-        public static void box(){
+       static int number = 10;
+       static void box(){
             Console.WriteLine("this is box");
         }
 
