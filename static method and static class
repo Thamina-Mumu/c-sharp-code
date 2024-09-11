@@ -1,5 +1,5 @@
 using System;
-namespace Statickeyword{
+namespace StaticMethod{
     class Toolbox {
         //non static method
         public void box1(){
@@ -16,7 +16,7 @@ namespace Statickeyword{
     }
 
     //main class start
-    class Program{
+    class Project{
 
         //main function
         static void Main(string[]args){
