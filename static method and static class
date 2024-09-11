@@ -1,3 +1,5 @@
+// static Method
+
 using System;
 namespace StaticMethod{
     class Toolbox {
@@ -24,6 +26,45 @@ namespace StaticMethod{
             t1.box1();//non static method call with object 
             Toolbox.box2();//static method call without an object
             Console.ReadLine();
+        }
+    }
+}
+
+
+
+=====================================================================================================================
+
+// The main function within the static class
+using System;
+namespace staticclass{
+    static class Project{
+       public static int number = 10;
+        public static void box(){
+            Console.WriteLine("this is box");
+        }
+
+        static void Main(string[]args){
+            Console.WriteLine(number);
+            box();
+        }
+    }
+}
+
+==============================================================================================================================
+// when the static class is outside of the main function class
+
+using System;
+namespace staticclass{
+    static class project1{
+         public static int number = 10;
+        public static void box(){
+            Console.WriteLine("this is box");
+        }
+    }
+   static class Project{
+        static void Main(string[]args){
+            Console.WriteLine(project1.number);
+            project1.box();
         }
     }
 }
