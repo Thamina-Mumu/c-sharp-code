@@ -1,1 +1,29 @@
+using System;
+namespace Statickeyword{
+    class Toolbox {
+        //non static method
+        public void box1(){
+            int x = 1;
+            string y = "sagor";
+            Console.WriteLine("Non static method : " + x + "=" + y );
+        }
+        //static method
+        public static void box2(){
+            int x = 2;
+            string y = " anik ";
+            Console.WriteLine("static method    : " + x + "=" + y);
+        }
+    }
 
+    //main class start
+    class Program{
+
+        //main function
+        static void Main(string[]args){
+            Toolbox t1 = new Toolbox();
+            t1.box1();//non static method call with object 
+            Toolbox.box2();//static method call without an object
+            Console.ReadLine();
+        }
+    }
+}
